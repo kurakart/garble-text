@@ -1,10 +1,9 @@
 {
 	"id": "garble-text",
 	"name": "Garble Text",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"minAppVersion": "0.12.10",
 	"description": "Garbles text to hide sensitive data.",
 	"author": "kurakart",
-	"authorUrl": "https://obsidian.md/about",
 	"isDesktopOnly": false
 }
