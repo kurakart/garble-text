@@ -5,5 +5,5 @@
 	"minAppVersion": "0.12.10",
 	"description": "Garbles text to hide sensitive data.",
 	"author": "kurakart",
-	"isDesktopOnly": false
+	"isDesktopOnly": true
 }
