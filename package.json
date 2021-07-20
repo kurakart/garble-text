@@ -1,6 +1,6 @@
 {
   "name": "garble-text",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Garbles text to hide sensitive data.",
   "main": "main.js",
   "scripts": {
