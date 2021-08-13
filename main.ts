@@ -21,6 +21,7 @@ export default class GarbleText extends Plugin {
 	}
 
 	onunload() {
+		this.isGarbled = false;
 		this.ungarble();
 		console.log('Garble Text unloaded');
 	}
