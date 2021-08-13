@@ -1,27 +1,35 @@
 import { App, Plugin } from 'obsidian';
 
 export default class GarbleText extends Plugin {
+	private isGarbled: boolean = false;
+
 	async onload() {
-		console.log('loading Garble Text plugin')
+		console.log('loading Garble Text plugin');
 
 		this.addCommand({
-				id: "do-garble-text",
-				name: "Garble Text",
-				 callback: () => {
-					 this.app.garbleText()
-				 }
+			id: "toggle-garble-text",
+			name: "Toggle Garble Text",
+			callback: () => {
+				if (this.isGarbled) this.ungarble();
+				else this.garble();
+
+				this.isGarbled = !this.isGarbled;
+			}
 		});
 
-		this.addCommand({
-				id: "undo-garble-text",
-				name: "Ungarble Text",
-				 callback: () => {
-				 	this.app.dom.appContainerEl.removeClass("is-text-garbled")
-				 }
-		});
+		//TODO: garble with regex
 	}
 
 	onunload() {
-		console.log('Garble Text unloaded')
+		this.ungarble();
+		console.log('Garble Text unloaded');
+	}
+
+	garble() {
+		this.app.garbleText();
+	}
+
+	ungarble() {
+		this.app.dom.appContainerEl.removeClass('is-text-garbled');
 	}
 }
