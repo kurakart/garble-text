@@ -8,9 +8,9 @@ Garbled text is ungarbled on hover.
 
 ## To-Dos
 
-[ ] Add an editor toolbar icon for mobile
-[ ] Regex-based garbling
-[ ] Setting to change garbled display font
+- Add an editor toolbar icon for mobile
+- Regex-based garbling
+- Setting to change garbled display font
 
 ## Credits
 
