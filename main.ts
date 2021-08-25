@@ -1,3 +1,5 @@
+import "./css/image-blur.css";
+import "./css/ungarble-on-hover.css";
 import { App, Plugin } from 'obsidian';
 
 export default class GarbleText extends Plugin {
