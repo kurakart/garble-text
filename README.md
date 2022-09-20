@@ -1,3 +1,5 @@
+**This plugin is no longer maintained. Sorry for any inconvinience caused.**
+
 # Garble Text
 
 This plugin exposes the `garbleText()` function in Obsidian. Use the commands palette (`ctrl+p`) to find the function **Toggle Garble Text**.
